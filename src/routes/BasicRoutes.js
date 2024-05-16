@@ -1,8 +1,5 @@
-import React, { Suspense } from 'react'
-import { Route, Routes, Navigate } from 'react-router-dom';
-import { allFlattenRoutes as allRoutes, loginRoutes, menuRoutes,  } from './index.js'
-import PrivateRoute from './PrivateRoute.jsx';
-
+import { Route, Routes } from 'react-router-dom';
+import { allFlattenRoutes as allRoutes, loginRoutes } from './index.js'
 
 function BasicRoutes(){
     return(

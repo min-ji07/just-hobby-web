@@ -8,6 +8,7 @@ export const UserContext = createContext(); // 컴포넌트에 props를 더 쉽�
 UserContext.displayName = 'UserContext';
 
 export default function PrivateRouteSwitch({ children }){
+    alert(children)
     // const {
     //     data: user,
     //     isLoading, // --> react-router에서 사용하는 useLocation, useHistory 사용해서 값 가져옴
@@ -35,7 +36,7 @@ export default function PrivateRouteSwitch({ children }){
     if(!user){
         return(
             <UserContext.Provider 
-                value={'안녕'}
+                // value={'안녕'}
             // value={{
             //     UserContext: {
             //         user: '임시User'
@@ -52,7 +53,7 @@ export default function PrivateRouteSwitch({ children }){
     if(user){
         return(
             <UserContext.Provider 
-            value={'안녕2?'}
+            // value={'안녕2?'}
             // value={{
             //     UserContext: { user }
             // }}

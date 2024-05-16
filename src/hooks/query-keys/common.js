@@ -1,0 +1,1 @@
+export const getSandboxURLKey = 'get-sandbox-url';
